@@ -1,4 +1,4 @@
-import { LoremIpsum } from "@/utils/utils"
+"use client"
 import { Fragment } from "react"
 import { AboutUsContent } from "../Elements/AboutUsContent"
 import { AboutUsImage } from "../Elements/AboutUsImage"
