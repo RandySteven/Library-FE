@@ -19,7 +19,7 @@ export const BookLayout : React.FC<BookDetailProps> = ({params}) => {
     })
     const [error, setError] = useState<string | null>(null)
     const [loading, setLoading] = useState<boolean>(true)
-
+    console.log(params.id)
     useEffect(() => {
         const fetchBook = async () => {
             try{

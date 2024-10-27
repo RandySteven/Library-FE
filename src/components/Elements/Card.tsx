@@ -15,7 +15,7 @@ export const BookCard = (props : CardBookList) => {
     let hreflink = "/books/"+props.id
     return <>
             <Fragment>
-                <Link href={hreflink}>
+                {/* <Link href={`/books/${props.id}`}> */}
                     <div className="block rounded-lg bg-white w-72 mb-16 border border-black border-1 px-2 py-5">
                         <div className="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
                             <img className="rounded-lg  sm:m-h-64 md:h-64 w-full" src={props.image} 
@@ -54,7 +54,7 @@ export const BookCard = (props : CardBookList) => {
                             </div>
                         </div>
                     </div>
-                </Link>
+                {/* </Link> */}
             </Fragment>
     </>
 }

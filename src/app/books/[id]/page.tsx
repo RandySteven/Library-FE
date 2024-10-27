@@ -1,3 +1,4 @@
+'use client';
 import { BookDetail } from "@/components/Fragments/BookDetail";
 import { BookLayout } from "@/components/Layouts/books/BookLayout";
 import { BookDetailProps } from "@/interfaces/props/BookDetail";
