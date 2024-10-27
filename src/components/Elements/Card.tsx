@@ -16,7 +16,7 @@ export const BookCard = (props : CardBookList) => {
     return <>
             <Fragment>
                 <Link href={hreflink}>
-                    <div className="block rounded-lg bg-black w-72 mb-16 border border-white border-1">
+                    <div className="block rounded-lg bg-white w-72 mb-16 border border-black border-1 px-2 py-5">
                         <div className="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
                             <img className="rounded-lg  sm:m-h-64 md:h-64 w-full" src={props.image} 
                                 alt="" />
@@ -29,10 +29,10 @@ export const BookCard = (props : CardBookList) => {
 
                         <div className="p-2">
                             <div className="flex justify-between">
-                                <h5 className="mb-2 text-sm font-bold leading-tight text-neutral-800 dark:text-neutral-50">
+                                <h5 className="mb-2 text-sm font-bold leading-tight text-black">
                                     {props.title}
                                 </h5>
-                                <h5 className="mb-2 text-sm font-bold leading-tight text-neutral-800 dark:text-neutral-50 flex">
+                                <h5 className="mb-2 text-sm font-bold leading-tight text-black flex">
                                     {props.rating} <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                         className="w-4 h-4 ml-1">
                                         <path fill-rule="evenodd"

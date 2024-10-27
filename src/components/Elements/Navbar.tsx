@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/router";
 import { Fragment, useEffect, useState } from "react"
 
-const NavbarContent = () => {
+export const NavbarContent = () => {
     const currentPath = usePathname();
 
     return (
@@ -45,7 +45,7 @@ const NavbarContent = () => {
     );
 }
 
-const Hiddenbar = () => {
+export const Hiddenbar = () => {
     return <>
         <div className="sm:hidden" id="mobile-menu">
             <div className="space-y-1 px-2 pb-3 pt-2">
