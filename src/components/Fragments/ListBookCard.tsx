@@ -25,6 +25,7 @@ export const ListBookCard : React.FC<ListBookProps> = ({books}) => {
                             title={book.title}
                             image={book.image}
                             status={book.status}
+                            rating={book.rating}
                         />
                     ))
                 )}

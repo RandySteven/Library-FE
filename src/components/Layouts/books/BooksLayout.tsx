@@ -10,6 +10,7 @@ export const BooksLayout = () => {
         {
             id: 0,
             title: "",
+            rating: 0,
             image: "",
             status: "",
             created_at: "",

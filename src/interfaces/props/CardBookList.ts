@@ -3,4 +3,5 @@ export interface CardBookList {
     title: string
     image: string
     status: string
+    rating: number
 }

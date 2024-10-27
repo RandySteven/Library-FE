@@ -1,16 +1,48 @@
+'use client';
 import Link from "next/link"
-import { Fragment } from "react"
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
+import { Fragment, useEffect, useState } from "react"
 
 const NavbarContent = () => {
-    return <>
-        <div className="flex space-x-4">
-            <Link href="/books" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Library</Link>
-            <Link href="/books" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Books</Link>
-            <Link href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Stories Generator</Link>
-            <Link href="/genres" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Genres</Link>
-        </div>
+    const currentPath = usePathname();
 
-    </>
+    return (
+        <div className="flex space-x-4">
+            <Link 
+                href="/" 
+                className={`rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white ${
+                    currentPath === '/' ? 'bg-gray-700 text-white' : 'text-gray-300'
+                }`}
+            >
+                Library
+            </Link>
+            <Link 
+                href="/books" 
+                className={`rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white ${
+                    currentPath === '/books' ? 'bg-gray-700 text-white' : 'text-gray-300'
+                }`}
+            >
+                Books
+            </Link>
+            <Link 
+                href="/stories" 
+                className={`rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white ${
+                    currentPath === '/stories' ? 'bg-gray-700 text-white' : 'text-gray-300'
+                }`}
+            >
+                Stories Generator
+            </Link>
+            <Link 
+                href="/genres" 
+                className={`rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white ${
+                    currentPath === '/genres' ? 'bg-gray-700 text-white' : 'text-gray-300'
+                }`}
+            >
+                Genres
+            </Link>
+        </div>
+    );
 }
 
 const Hiddenbar = () => {
