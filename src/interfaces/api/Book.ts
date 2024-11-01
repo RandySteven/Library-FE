@@ -20,6 +20,7 @@ export interface ListBookResponse {
 export interface BookDetailResponse {
     id: number
     image: string
+    rating: number
     title: string
     status: string
     description: string

@@ -5,7 +5,9 @@ import { Fragment } from "react";
 export default function Page() {
     return <>
         <Fragment>
-            <LoginLayout />
+            <div className="mx-16 my-4">
+                <LoginLayout />
+            </div>
         </Fragment>
     </>
 }

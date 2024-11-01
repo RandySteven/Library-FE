@@ -9,7 +9,9 @@ import { Fragment } from "react";
 export default function GenreDetailPage({params}: UrlQueryProps) {
     return <>
         <Fragment>
-            <GenreLayout params={params} />
+            <div className="mx-16 my-4">
+                <GenreLayout params={params} />
+            </div>
         </Fragment>
     </>
 }

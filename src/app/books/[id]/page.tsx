@@ -7,7 +7,9 @@ import { Fragment } from "react";
 export default function BookDetailPage({params}: BookDetailProps) {
     return <>
         <Fragment>
-            <BookLayout params={params} />
+            <div className="mx-16 my-4">
+                <BookLayout params={params} />
+            </div>
         </Fragment>
     </>
 }

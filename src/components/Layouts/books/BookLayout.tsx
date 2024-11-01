@@ -10,6 +10,7 @@ export const BookLayout : React.FC<BookDetailProps> = ({params}) => {
     const [bookDetail, setBookDetail] = useState<BookDetailResponse>({
         id: 0,
         title: "",
+        rating: 0,
         authors: [],
         genres: [],
         description: "",
@@ -44,6 +45,7 @@ export const BookLayout : React.FC<BookDetailProps> = ({params}) => {
                 id={bookDetail.id}
                 title={bookDetail?.title}
                 authors={bookDetail?.authors}
+                rating={bookDetail?.rating}
                 genres={bookDetail?.genres}
                 description={bookDetail?.description}
                 created_at={bookDetail?.created_at}

@@ -4,6 +4,7 @@ import { RegisterRequest } from "@/interfaces/api/Onboarding"
 
 export const RegisterForm = () => {
     const [registerRequest, setRegisterRequest] = useState<RegisterRequest>({
+        name: "",
         email: "",
         password: ""
     })
@@ -11,6 +12,15 @@ export const RegisterForm = () => {
         <Fragment>
             <div className="mx-16 px-8">
                 <form method="POST" onSubmit={() => {}} className="w-full bg-white my-5 py-5 justify content-center">
+                    <Input 
+                        id="name"
+                        label="Full Name"
+                        name="name"
+                        inputType="text"
+                        onChange={() => {}}
+                        value={registerRequest.name}
+                        labelFor="name" 
+                    />
                     <Input 
                         id="email"
                         label="Email"

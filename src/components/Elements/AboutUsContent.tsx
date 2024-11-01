@@ -1,4 +1,4 @@
-import LoremIpsum from "@/utils/utils"
+import { LoremIpsum } from "@/utils/utils"
 
 export const AboutUsContent = () => {
     return <>

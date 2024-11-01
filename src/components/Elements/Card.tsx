@@ -20,7 +20,7 @@ export const BookCard = (props : CardBookList) => {
                         <div className="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
                             <img className="rounded-lg  sm:m-h-64 md:h-64 w-full" src={props.image} 
                                 alt="" />
-                            <a href="#!">
+                            <a href={hreflink}>
                                 <div
                                     className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                                 </div>
@@ -67,9 +67,9 @@ export const GenreCard = (props : CardGenreList) => {
                 <h5 className="mb-2 text-slate-800 text-xl font-semibold">
                     {props.genre}
                 </h5>            
-                <button className="rounded-md bg-slate-800 py-2 px-4 mt-6 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                <Link href={`genres/${props.id}`} className="rounded-md bg-slate-800 py-2 px-4 mt-6 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                     Read more
-                </button>
+                </Link>
             </div>
         </div>
 
